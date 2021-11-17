@@ -8,14 +8,9 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v2
         with:
-          repository: matdavy1/simple-gradle
-          path: ./simple-gradle
-      # - name: Set up JDK 11
-      #   uses: actions/setup-java@v2
-      #   with:
-      #     java-version: '11'
-      #     distribution: 'adopt'
+          repository: matdavy1/groovy-library
+          path: ./groovy-library
       - name: setup groovy
         run: sudo apt-get install groovy
       - name: run hello action
-        run: groovy ./simple-gradle/hello mat
+        run: groovy ./groovy-library/hello mat
