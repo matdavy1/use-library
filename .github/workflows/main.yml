@@ -16,10 +16,6 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: setup groovy
-        run: |
-          curl -s get. sdkman. io
-          source "$HOME/.sdkman/bin/sdkman-init.sh"
-          sdk install groovy.
-        shell: bash
+        run: sudo apt-get install groovy
       - name: run hello action
         run: cat ./simple-gradle/hello.groovy
