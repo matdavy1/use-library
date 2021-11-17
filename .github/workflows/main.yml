@@ -16,4 +16,4 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: run hello action
-        run: groovy ./simple-gradle/hello.groovy
+        run: cat ./simple-gradle/hello.groovy
