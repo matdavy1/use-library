@@ -18,4 +18,4 @@ jobs:
       - name: setup groovy
         run: sudo apt-get install groovy
       - name: run hello action
-        run: cat ./simple-gradle/hello.groovy
+        run: groovy ./simple-gradle/hello
